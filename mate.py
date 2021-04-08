@@ -2,6 +2,7 @@ import pyttsx3
 import datetime
 import speech_recognition as sr
 
+
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[1].id)
@@ -37,14 +38,15 @@ def takeCommand():
     try:
         print("Recognizing....")
         query = r.recognize_google(audio,language='en-in')
-        print(f"User said: {query}\n")
+        print("User said:", query)
 
     except Exception as e:
         print("Say that again please...")
         return "None"
-
+    return query
 
 
 
 if __name__ == '__main__':
   wishMe()
+  takeCommand()
