@@ -25,7 +25,7 @@ def wishMe():
     else:
         speak("Wishing you a very wonderful evening. Look at the sunset and smile")
 
-    speak("Hi! I'm your Mate . How may I assist you?")
+    speak("Hi! I'm Olive . How may I assist you?")
 
 def takeCommand():
     '''Add doc string'''
